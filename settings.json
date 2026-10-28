@@ -7,32 +7,43 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "markdown_preview": {
+    "font_size": 14.0
+  },
+  "agent_ui_font_size": 16.0,
   "terminal": {
-    "shell": {
-      "program": "nu"
+    "shell": "system"
+  },
+  "agent_servers": {
+    "claude-acp": {
+      "default_config_options": {
+        "mode": "auto"
+      },
+      "type": "registry"
     }
   },
+  "buffer_line_height": "standard",
   "buffer_font_family": "CaskaydiaCove Nerd Font Mono",
   "cli_default_open_behavior": "new_window",
-  "languages": {
-    "Haskell": {
-      "tab_size": 2
-    }
+  "project_panel": {
+    "hide_hidden": false
   },
-  "format_on_save": "off",
-  "disable_ai": true,
+  "diff_view_style": "split",
   "helix_mode": true,
+  "vim_mode": false,
   "telemetry": {
-    "diagnostics": true,
-    "metrics": false,
-    "anthropic_retention": false
+    "diagnostics": false,
+    "metrics": false
   },
-  "icon_theme": "Zed (Default)",
-  "ui_font_size": 16,
-  "buffer_font_size": 13.0,
-  "theme": {
-    "mode": "dark",
-    "light": "One Light",
-    "dark": "Fleet Dark",
-  },
+  "ui_font_size": 14.0,
+  "buffer_font_size": 14.0,
+  "theme": "Fleet Dark",
+  "theme_overrides": {
+    "Fleet Dark": {
+      "panel.background": "#101010",
+      "border": "#101010",
+      "editor.background": "#000000",
+      "editor.gutter.background": "#000000"
+    }
+  }
 }
